@@ -9,12 +9,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+
       - name: Update LeetCode stats
-        uses: sujl/leetcode-stats-box@main
+        uses: MatheusXavierr/leetcode-profile-readme-action@main
         with:
-          username: MarcoCotas  # ← Muda para o teu username do LeetCode
-          theme: "dark"  # Podes trocar por outras opções como "light"
-          output: "leetcode.svg"
+          username: "MarcoCotas"
+          card_theme: "dark"
+
       - name: Commit changes
         run: |
           git config --global user.name "github-actions"
