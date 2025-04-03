@@ -18,6 +18,9 @@ Outside of coding, you'll often find me exploring new tech trends, strategizing 
 
 ---
 
+![LeetCode Stats](leetcode.svg)
+
+
 ### 🤖 Languages and Tools
 
 ![212284158-e840e285-664b-44d7-b79b-e264b5e54825](https://github.com/user-attachments/assets/5aab6bc4-4990-469a-8d50-97b569f5fd30)
