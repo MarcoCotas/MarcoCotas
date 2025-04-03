@@ -1,0 +1,24 @@
+name: Update LeetCode Stats
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Atualiza todos os dias à meia-noite
+  workflow_dispatch:  # Permite rodar manualmente
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Update LeetCode stats
+        uses: sujl/leetcode-stats-box@main
+        with:
+          username: MarcoCotas  # ← Muda para o teu username do LeetCode
+          theme: "dark"  # Podes trocar por outras opções como "light"
+          output: "leetcode.svg"
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add .
+          git commit -m "Atualizar LeetCode stats" || echo "Nenhuma mudança"
+          git push
