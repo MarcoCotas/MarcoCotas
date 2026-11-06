@@ -8,7 +8,7 @@ I run customer support, sales and the revenue pipeline at a poker training SaaS,
 - **Revenue integrity:** reconciliation between billing (Stripe), CRM and login/access data, with alerting so a person fixes mismatches before a customer is affected.
 - **Support systems:** an in-house support panel and queue, AI-drafted replies that a person approves, and a help center that flags and repairs outdated articles.
 - **Verification pipelines:** AI output that must survive independent review before it is published (for example, release notes where every claim must point to the code change behind it).
-- **Automation for small teams:** n8n + Claude workflows with test suites. See [kedgework.com](https://kedgework.com).
+- **AI Remote Training Jobs. See [aiworkccentral.com](https://aiworkcentral.com/).
 
 ### How I work
 Specify, direct, verify. Every system ships with checks designed to fail when it breaks, and nothing risky changes without a person approving it.
